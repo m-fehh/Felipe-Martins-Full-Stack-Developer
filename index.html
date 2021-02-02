@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Martins | Full Stack Developer</title>
+    <link rel="shortcut icon" href="img2/logo-fam3.ico" />
+    <!-- Fonte-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts-->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Icons - FontAwesome-->
+    <script src="https://kit.fontawesome.com/b531273e14.js" crossorigin="anonymous"></script>
+    <!--  Progress Bar-->
+    <Script src="js/progressbar.min.js"></Script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Iniciando o menu -->
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="logo fam3.png" alt="fam-logo">       Bem-vindo!
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-links" 
+                aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav"></div>
+                </div>
+                <div class="LinkContato">
+                  <a class="nav-item nav-link" id="contato-menu" href="file:///C:/Users/Felipe%20Ap%20Martins/Desktop/Curso%20Bootstrap/contato/index_contato.html">CONTATO</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Fim menu -->
+    </header>
+<main>
+    <!-- Iniciando o Carousel-->
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#mainSlider" data-bs-slide-to="1"></li>
+          <li data-bs-target="#mainSlider" data-bs-slide-to="2"></li>
+          <li data-bs-target="#mainSlider" data-bs-slide-to="3"></li>
+          <li data-bs-target="#mainSlider" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img2/csharp.png" class="d-block w-100" alt="C#">
+            <div class="carousel-caption d-none d-md-block">
+                <p>C#</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img2/js.png" class="d-block w-100" alt="JS">
+            <div class="carousel-caption d-none d-md-block">
+                <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img2/html.png" class="d-block w-100" alt="HTML">
+            <div class="carousel-caption d-none d-md-block">
+                <p>HTML</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img2/css.png" class="d-block w-100" alt="CSS">
+            <div class="carousel-caption d-none d-md-block">
+                <p>CSS</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img2/bootstrap.png" class="d-block w-100" alt="Bootstrap">
+            <div class="carousel-caption d-none d-md-block">
+                <p>Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <!-- Fim carousel-->
+
+      <!-- Quem sou eu-->
+      <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Sobre mim</h3>
+            </div>
+            <div class="col md-6">
+              <img class="img-fluid" src="img2/quemsoueu.png" alt="Quem Sou Eu">
+            </div>
+            <div class="col md-6">
+              <h3>Sobre:</h3></h3>
+              <p>Olá, me chamo Felipe e sou Full Stack Developer Junior, tenho 20 anos e sou estutante de tecnologia e desenvolvimento de softwares.</p>
+              <h3>Objetivo:</h3>
+              <p>Criar uma carreira ampla no desenvolvimento, aprender diversas tecnologias que contribuem para meus projetos positivamente, sendo projetos pessoais e projetos profissionais.</p>
+              <h3>Interesse pessoais:</h3>
+              <p>Aprender tecnologias novas, jogar games, escutar música, assistir séries e sair com amigos.</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <!-- Fim do quem sou eu -->
+
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Linguagens</h3>
+            </div>
+            <div class="col-md-4 service-box">
+              <img class="csharp-icon" src="img2/icons/csharp.png" alt="c#">
+              <h4>C#</h4>
+            </div>
+
+            <div class="col-md-4 service-box">
+              <img class="icon-hoverr" src="img2/icons/js.png" alt="js">
+              <h4>JavaScript</h4>
+            </div>
+
+            <div class="col-md-4 service-box">
+              <img class="icon-hoverr" src="img2/icons/html.png" alt="HTML">
+              <h4>HTML</h4>
+            </div>
+
+            <div class="col-md-4 service-box">
+              <img src="img2/icons/css.png" alt="CSS">
+              <h4>CSS</h4>
+            </div>
+
+            <div class="col-md-4 service-box">
+              <img src="img2/icons/boots.png" alt="Bootstrap">
+              <h4>Bootstrap</h4>
+            </div>
+
+            <div class="col-md-4 service-box">
+              <img src="img2/icons/sql.png" alt="SQL">
+              <h4>SQL</h4>
+            </div>
+
+          </div>
+        </div>
+
+ 
+      </div>
+
+      <!-- Projetos -->
+
+      <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Projetos</h3>
+            </div>
+            
+              <img class="img-fluid-esquerdo" src="img2/git.png" alt="Quem Sou Eu">
+            
+            <div class="col md-6" id="colorNaGrid">
+              <h3>Meus projetos estão em fase inicial de desenvolvimento.</h3>
+              <button onclick="location.href='http://www.google.com.br'" type="button" class="btn btn-secondary btn-lg" id="buttonGitHub">MEU GITHUB</button>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <!-- Fim dos projetos -->
+
+      <!-- Iniciando o footer (rodapé) -->
+      <footer>
+        <div class="RodapeFooter">
+          <h4>Vamos trabalhar juntos</h4>
+          <p class="pFooter">Possui alguma proposta que gostaria de discutir?</p>
+          <div class="contatoFooter">
+            <button class="nav-item nav-link" id="contato-footer" href="#">Entre em contato</button>
+            <div class="RedesSociais">
+              <h5 class="tituloRedesSociais">Redes Sociais</h5>
+              <a href="https://www.facebook.com">
+                <img class="logoFace" src="img2/redes sociais/face.png" alt="Face">
+              </a>
+
+              <a href="https://www.instagram.com.br">
+                <img class="logoGit" src="img2/redes sociais/git.png" alt="Git">
+              </a>
+
+              <a href="https://www.instagram.com.br">
+                <img class="logoInsta" src="img2/redes sociais/insta.png" alt="Insta">
+              </a>
+
+              <a href="https://www.linkedin.com">
+                <img class="logoLinkedin" src="img2/redes sociais/linkedin.png" alt="Linkedin">
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: #222222; color: white;">
+          © 2021 Copyright:
+          <a class="textFooter">Felipe Martins. Hosted by Vercel.</a>
+        </div>
+      </footer>
+      
+    </div>
+</main>
+    <script src="js/script.js"></script>
+</body>
+</html>
