@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
     <style>
-    
     
     /* Gerais */
 body {
@@ -108,7 +108,7 @@ header, .navbar {
 /* Contatos */
 
 .borda {
-    border: 1px solid #dbdbdb93;
+    border: 1px solid #1d171793;
     padding: 30px;
     margin-left: 10px;
     width:600px;
@@ -142,12 +142,13 @@ header, .navbar {
 /* Dúvidas gerais */
 
 .mensagemDireita {
-    border: 1px solid #dbdbdb93;
+    border: 1px solid #1d171793;
     background-color: #e7e7e9b9;
     border-radius: 10px;
     padding: 30px;
     margin-left: 10px;
     width:600px;
+    height: 520px;
     margin-top: 30px;
 }
 
@@ -156,6 +157,7 @@ header, .navbar {
     color: #222222;
     text-align: center;
     padding-bottom: 15px;
+    margin-top: 55px;
     color: #6376ff;
     font-weight: bold;
 }
@@ -166,27 +168,19 @@ header, .navbar {
     text-align: center;
 }
 
-
-/* Sugestão */
-
-.sugestao {
-    border: 1px solid #dbdbdb93;
-    background-color: #6376ff;
+.btnEnviarContato input {
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: -100px;
+    margin-left: 34%;
+    outline: none;
+    color: #6376ff;
+    border: 2px solid #6376ff;
+    background-color: #010941;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 52%;
-    width:600px;
-    height: 165px;
-    float: right;
-    margin-top: -170px;
 }
 
-#floatingTextarea22 {
-    width: 100%;
-    margin-top: -1px;
-    height: 160px;
-    padding: 10px;
-}
 
 /* Footer */
 
@@ -254,8 +248,8 @@ header, .navbar {
     box-shadow:         2px 7px 5px rgba(50, 50, 50, 0.77);
 }
     
-    
     </style>
+
     <!-- Scripts-->
     <script
     src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -276,7 +270,7 @@ header, .navbar {
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="#" class="navbar-brand">
-                    <img id="logo" src="logo fam3.png" alt="fam-logo">       Bem-vindo!
+                    <img id="logo" src="../logo fam3.png" alt="fam-logo">       Bem-vindo!
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-links" 
                 aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
@@ -306,26 +300,34 @@ header, .navbar {
                     <h3 class="txtMsg">Deixe sua mensagem</h3>
                   </div>
                 <div class="col md-6">  
+
+
                     <!-- Nome -->
-                    <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+                    <input type="text" class="form-control" id="nomeid" placeholder="Nome" aria-label="Nome">
                     <!-- E-mail -->
                     <form class="form-floating">
-                        <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                        <input type="email" class="form-control"  id="floatingInputValue" placeholder="Seu e-mail">
                         <label for="floatingInputValue">E-mail</label>
                     </form>
                     <!-- Assunto -->   
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" placeholder="Assunto" id="floatingTextarea"></textarea>
                         <label for="floatingTextarea">Assunto</label>
                     </div>
                     <!-- Comentário -->
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea22" style="height: 100px"></textarea>
-                        <label for="floatingTextarea22">Mensagem</label>
+                        <textarea class="form-control" placeholder="Comentário" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mensagem</label>
                     </div>
+
+                    <div class="btnEnviarContato" onclick="msg()">
+                      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar mensagem" />
+                    </div>
+                  </form>
                 </div>                
             </div>
         </div>
+        
 
         <div class="col md-6"> 
             <div class="mensagemDireita">
@@ -335,15 +337,11 @@ header, .navbar {
                 <p>fmi433812@gmail.com</p>
                 <h3>Cidade</h3>
                 <p>Jundiaí-SP</p>
+                <h3>Contato</h3>
+                <p>(011) 97390-0029</p>
             </div>
         </div>
 
-        <div class="sugestao">
-               <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Sugestão</label>
-               </div>
-        </div>
 
     </div>
 
@@ -351,19 +349,19 @@ header, .navbar {
             <div class="RedesSociais">
               <h5 class="tituloRedesSociais"></h5>
               <a href="https://www.facebook.com">
-                <img class="logoFace" src="face.png" alt="Face">
-              </a>
-
-              <a href="https://github.com/">
-                <img class="logoGit" src="git-social.png" alt="Git">
+                <img class="logoFace" src="../img2/redes sociais/face.png" alt="Face">
               </a>
 
               <a href="https://www.instagram.com.br">
-                <img class="logoInsta" src="insta.png" alt="Insta">
+                <img class="logoGit" src="../img2/redes sociais/git-social.png" alt="Git">
+              </a>
+
+              <a href="https://www.instagram.com.br">
+                <img class="logoInsta" src="../img2/redes sociais/insta.png" alt="Insta">
               </a>
 
               <a href="https://www.linkedin.com">
-                <img class="logoLinkedin" src="linkedin.png" alt="Linkedin">
+                <img class="logoLinkedin" src="../img2/redes sociais/linkedin.png" alt="Linkedin">
               </a>
 
             </div>
@@ -376,6 +374,46 @@ header, .navbar {
         </div>
       </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+      function Enviar() {
+
+// Guardando as variaveis 
+
+var nome = document.getElementById("nomeid");
+var email = document.getElementById("floatingInputValue");
+var assunto = document.getElementById("floatingTextarea");
+var msgm = document.getElementById("floatingTextarea2");
+
+// Iniciando IF's 
+
+if (nome.value != "") {
+    alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+}
+
+
+if (nome.value == "") {
+    alert ("Por favor, insira o seu nome.") 
+}
+
+
+
+if (email.value == "") {
+    alert ("Por favor, insira o seu e-mail.") 
+}
+
+
+
+if (assunto.value == "") {
+    alert ("Por favor, insira o assunto desejado.") 
+}
+
+
+
+if (msgm.value == "") {
+    alert ("Por favor, insira a sua mensagem.") 
+}
+
+}
+    </script>
 </body>
 </html>
