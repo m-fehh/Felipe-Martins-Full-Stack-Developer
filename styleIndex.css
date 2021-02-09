@@ -1,0 +1,558 @@
+/* Gerais */
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li {
+    color: #4444;
+    font-size: 14px;
+}
+
+/* Barra de navegação */
+
+header, .navbar {
+    background-color: #6376ff;
+    height: 88px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+#logo {
+    width: 80px;
+    border-radius: 10%;
+    margin-right: 2px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #010941;
+    font-size: 12px;
+    padding-left: 30px;
+    top: 10px;
+}
+
+.navbar-brand:hover {
+    color: #010941;
+}
+
+#navbar-links a {
+    color: #ffffff;
+    padding: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.LinkContato { 
+    margin-right: 70px;
+    color: black;
+    border: 2px solid #ffffff;
+    background-color: #010941;
+}
+
+.LinkContato:hover {
+    color: #6376ff;
+    padding: 2px;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #010941;
+    cursor: pointer;
+
+}
+
+#navbar-links a:hover {
+    color: #d70439;
+    cursor: pointer;
+    text-shadow: 5px 5px 5px rbga(0,0,0,0.5);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+
+/* Slider / Carousel */
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top:30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 13px;
+    margin-top: 30%;
+    float: right;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 10px;
+    font-weight: 300;
+    color: white;
+    margin-top: 32.5%;
+    margin-right: -80px;
+    float: right;
+}
+
+
+
+.carousel-indicators .active {
+    background-color: #300076;
+}
+
+
+/* Sobre mim */
+
+#about-area {
+    background-color: #f9f9f9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #444;
+    width: 7.5%;
+    position: absolute;
+    margin-top: 60px;
+    left:46.0%;
+}
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 30px;
+    color:#948f8f;
+    font-size: 14px;
+}
+
+#about-list i {
+    color: #65DAF9;
+    margin-right: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    color: black;
+}
+
+p {
+    color: #948f8f;
+    font-size: 14px;
+}
+
+/* Linguagens */
+
+.service-box {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+
+.service-box h4 {
+    transition: .5s;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > .icon-hoverr, .service-box:hover > h4 {
+    color: #6376ff;
+}
+
+
+/* Projetos */
+
+.img-fluid-esquerdo {
+    margin-left: -40px;
+    width: 544px;
+    height: 285px;
+    border-radius: 40px 0 0 40px;
+
+}
+
+#colorNaGrid {
+    border-top: 2px solid #6376ff;
+    padding: 15px;
+    width: 100%;
+    margin-left: -12px;
+    background-color: #6376ff;
+    border-radius: 0 30px 30px 0;
+    border-bottom: 2px solid #6376ff;
+
+}
+
+#colorNaGrid h3 {
+    margin-top: 50px;
+}
+
+#buttonGitHub {
+    color: #6376ff;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 8px;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#buttonGitHub:hover {
+    color: white;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 8px;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: #6376ff;
+}
+
+.ProjetosCelular {
+    display: none;
+}
+
+/* Iniciando o footer */
+
+#copyright-background {
+    color: white;
+    background-color: #222;
+}
+
+.textFooter {
+    color: white;
+    text-decoration: none;
+}
+
+.textFooter:hover {
+    color: #6376ff;
+}
+
+.RodapeFooter {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #6376ff;
+    width: 100%;
+    height:280px;
+    padding: 4rem 7rem;
+    flex-wrap: wrap;
+    border-top:0.52px solid #300076;
+}
+.RodapeFooter h4 {
+    font: 300 2.1rem Rubik;
+    color: #222222;
+    text-align: center;
+    margin-left: -5%;
+    margin-top: -100px;
+}
+
+.RodapeFooter p {
+    font: 300 0.9rem Rubik;
+    color: #222222;
+    text-align: center;
+    margin-left: -57%;
+    margin-top: 20px;
+}
+
+.contatoFooter button {
+    color: red;
+    margin-top: 140px;
+    text-align: center;
+    float: left;
+    margin-left: -170%;
+    color: #6376ff;
+    border: 2px solid #ffffff;
+    background-color: #010941;
+}
+
+.contatoFooter button:hover {
+    color: #6376ff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #010941;
+    cursor: pointer;
+}
+
+.text-center center-block {
+    background-color: transparent;
+}
+
+.RedesSociais {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.tituloRedesSociais {
+    font: 300 2.1rem Rubik;
+    color: #222222;
+    text-align: center;
+    margin-top: -39px;
+    margin-bottom: -20px;
+}
+
+.logoFace {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.logoGit {
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.logoInsta {
+    margin-top: 40px;
+}
+
+.logoLinkedin {
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* ----------- */
+
+.logoFace:hover {
+    border-radius: 15px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.logoGit:hover {
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+
+.logoInsta:hover {
+    border-radius: 15px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.logoLinkedin:hover {
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         2px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+
+@media(max-width:425px) {
+
+    #logo {
+        margin-top:-3px;
+    }
+
+    #mainSlider {
+        margin-top: 0.5px;
+        width: 665px;
+    }
+
+    #mainSlider .carousel-caption {
+       display: none; 
+    }
+
+    
+
+    .carousel-indicators .active {
+        margin-top: -130px;
+        margin-left: 40px;
+    }
+
+    #QuemSou {
+        margin-top: -140px;
+        margin-left: 115px;
+        width: 100%;
+    }
+
+  
+    .main-title::after {
+        content: "";
+        border-top: 2px solid rgb(128, 123, 123);
+        width: 7.5%;
+        position: absolute;
+        padding-bottom: 70px;
+        margin-left: 80px;
+        width: 100px;
+    }
+
+    .img-fluid  {
+        display: none;
+    }
+
+    #QuemSouEscrita {
+        margin-top: -10px;
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    #QuemSouLinguagens {
+        margin-left: 115px;
+        width: 100%;
+    }
+
+
+    #linguaCsharp {
+        margin-left: -80px;
+    }
+
+    #linguaJS {
+        margin-left: 130px;
+        margin-top: -228px;
+    }
+
+    #linguaHTML {
+        margin-left: -80px;
+        margin-top: -30px; 
+    }
+
+    #linguaCss {
+        margin-left: 320px;
+        margin-top: -428px;
+    }
+
+    #linguaBoots {
+        margin-left: 130px;
+        margin-top: -228px;
+    }
+
+    #linguaSql {
+        margin-left: 320px;
+        margin-top: -228px;
+    }
+
+    #QuemSouProjetos {
+        margin-left: 115px;
+        width: 100%;
+    }
+
+    .img-fluid-esquerdo {
+        display: none;
+    }
+
+    #ProjetosBack {
+        width: 700px;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: -100px;
+        position: relative;
+    }
+
+    #colorNaGrid {
+        width: 100%;
+        margin-left: 120px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding: 30px;
+        text-align: center;
+
+ 
+    }
+
+    #colorNaGrid h3 {
+        font-size: 17px;
+    }
+
+    #buttonGitHub {
+        margin-left: 10px;
+    }
+
+    .RodapeFooter {
+        width: 665px; 
+    }
+
+    .RodapeFooter h4 {
+        margin-top: -5px;
+        margin-left: -10px;
+        font-size: 35px;
+        margin-right: -10px;
+    }
+
+    .RodapeFooter p {
+        margin-right: -50px;
+        margin-left: 0px;
+        margin-top: -50px;
+        font-size: 17px;
+    }
+
+    #contato-footer {
+        margin-top:100px;
+        margin-left: -260px;
+        color: #6376ff;
+        font-size: 20px;
+        padding: 8px;
+        border: 2px solid white;
+        font-weight: bold;
+        border-radius: 30px;
+        background-color: white;
+        outline: none;
+    }
+
+    .RedesSociais {
+        display: none;
+    }
+    
+
+    #footerFinish {
+       width: 665px;
+    }
+
+    .text-center p-3  {
+        margin-left: -70px;
+    }
+}
