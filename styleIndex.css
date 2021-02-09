@@ -397,7 +397,7 @@ p {
 
     #mainSlider {
         margin-top: 0.5px;
-        width: 665px;
+        width: 745px;
     }
 
     #mainSlider .carousel-caption {
@@ -407,13 +407,13 @@ p {
     
 
     .carousel-indicators .active {
-        margin-top: -130px;
+        margin-top: -82px;
         margin-left: 40px;
     }
 
     #QuemSou {
-        margin-top: -140px;
-        margin-left: 115px;
+        margin-top: -50px;
+        margin-left: 165px;
         width: 100%;
     }
 
@@ -424,7 +424,7 @@ p {
         width: 7.5%;
         position: absolute;
         padding-bottom: 70px;
-        margin-left: 80px;
+        margin-left: 140px;
         width: 100px;
     }
 
@@ -432,17 +432,32 @@ p {
         display: none;
     }
 
+    .col md-6 {
+        display: none;
+    }
+
     #QuemSouEscrita {
         margin-top: -10px;
-        margin-left: 0px;
+        margin-left: 190px;
+        width: 745px;
+    }
+
+    #QuemSouEscrita h3 {
         text-align: center;
-        width: 100%;
+    }
+
+    #QuemSouEscrita p {
+        margin-top: 20px;
+        margin-left: -100px;
+        width: 600px;
     }
 
 
 
+
     #QuemSouLinguagens {
-        margin-left: 115px;
+        margin-top: -50px;
+        margin-left: 165px;
         width: 100%;
     }
 
@@ -513,7 +528,7 @@ p {
     }
 
     .RodapeFooter {
-        width: 665px; 
+        width: 745px;
     }
 
     .RodapeFooter h4 {
@@ -524,15 +539,15 @@ p {
     }
 
     .RodapeFooter p {
-        margin-right: -50px;
-        margin-left: 0px;
+        margin-right: -35px;
+        margin-left: 35px;
         margin-top: -50px;
         font-size: 17px;
     }
 
     #contato-footer {
         margin-top:100px;
-        margin-left: -260px;
+        margin-left: -305px;
         color: #6376ff;
         font-size: 20px;
         padding: 8px;
@@ -549,7 +564,7 @@ p {
     
 
     #footerFinish {
-       width: 665px;
+       width: 745px;
     }
 
     .text-center p-3  {
